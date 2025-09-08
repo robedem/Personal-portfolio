@@ -1,38 +1,323 @@
-.App {
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  color: #1a1a1a;
+  background: #f7f7f7;
+  line-height: 1.6;
+  scroll-behavior: smooth;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Header */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+  transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+.navbar.scrolled {
+  background: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.nav-logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-decoration: none;
+  color: #1a1a1a;
+}
+
+.nav-menu {
+  display: flex;
+  list-style: none;
+}
+
+.nav-menu li {
+  margin-left: 20px;
+}
+
+.nav-menu a {
+  text-decoration: none;
+  color: #1a1a1a;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-menu a:hover {
+  color: #4a90e2;
+}
+
+/* Hero */
+/* Hero */
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 60px 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+#particles-js {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  pointer-events: auto; /* Ensure interactivity */
+}
+
+#particles-js canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(15, 88, 112, 0.6); /* Reduced opacity */
+  z-index: 2;
+}
+
+.hero-title,
+.hero-description {
+  position: relative;
+  z-index: 10;
+  color: #1a1a1a;
+}
+
+/* About */
+.about {
+  padding: 80px 20px;
+}
+
+.about h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.about p {
+  max-width: 600px;
+  margin-bottom: 20px;
+}
+
+/* Experience (Timeline like Brittany's) */
+.experience {
+  padding: 80px 20px;
+}
+
+.experience h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+}
+
+.timeline {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.timeline-item {
+  display: flex;
+  margin-bottom: 40px;
+}
+
+.timeline-date {
+  flex: 0 0 150px;
+  font-weight: 600;
+  color: #666;
+}
+
+.timeline-content h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.timeline-content p {
+  margin-bottom: 10px;
+}
+
+.timeline-content ul {
+  list-style: disc;
+  padding-left: 20px;
+}
+
+/* Projects (Card grid like Brittany's) */
+/* Projects (Card grid) */
+/* Projects (Card grid) */
+/* Projects (Card grid) */
+.projects {
+  padding: 80px 20px;
+  background-color: #f7f7f7;
+}
+
+.projects-title {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 60px;
+  color: #1a1a1a;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 40px;
+  margin-bottom: 40px;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.project-card {
+  background: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+/* Center the third card */
+.projects-grid .project-card:nth-child(3) {
+  grid-column: 1 / -1;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 320px;
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+}
+
+.project-title {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+  color: #1a1a1a;
+}
+
+.project-description {
+  font-size: 1.1rem;
+  color: #666;
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+.project-tech {
+  margin-bottom: 25px;
+}
+
+.project-tech span {
+  display: inline-block;
+  margin: 0 10px;
+  font-size: 1.2rem;
+  color: #4a90e2;
+}
+
+.project-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: rgba(15, 88, 112, 0.9);
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 6px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.project-btn:hover {
+  background-color: rgba(15, 88, 112, 1);
+  transform: translateY(-2px);
+}
+
+.projects-button {
+  text-align: center;
+  margin-top: 20px; /* Reduced margin for flexibility */
+}
+
+.view-all-btn {
+  display: inline-block;
+  padding: 12px 25px;
+  background-color: rgba(15, 88, 112, 0.9);
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 6px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.view-all-btn:hover {
+  background-color: rgba(15, 88, 112, 1);
+  transform: translateY(-2px);
+}
+
+/* Contact */
+.contact {
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.contact h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.contact p a {
+  color: #4a90e2;
+  text-decoration: none;
+  margin: 0 5px;
+}
+
+.contact p a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .nav-menu {
+    flex-direction: column;
+    align-items: center;
   }
-  to {
-    transform: rotate(360deg);
+  .nav-menu li {
+    margin: 10px 0;
+  }
+  .hero-title {
+    font-size: 2rem;
+  }
+  .hero-subtitle {
+    font-size: 1.2rem;
+  }
+  .timeline-item {
+    flex-direction: column;
+  }
+  .timeline-date {
+    margin-bottom: 10px;
   }
 }
