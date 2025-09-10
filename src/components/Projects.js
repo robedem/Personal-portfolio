@@ -2,38 +2,35 @@ function Projects() {
   return (
     <section id="projects" className="projects">
       <div className="container">
-        <h2 className="projects-title">Projects</h2>
-        <div className="projects-grid">
-          <div className="project-card">
+        <div className="grid">
+          <h2 className="projects-title">Projects</h2>
+          <div className="card">
             <h3 className="project-title">Portfolio Website</h3>
             <p className="project-description">A responsive personal portfolio built with React and styled with CSS.</p>
-            <div className="project-tech">
-              <span>🔴 React</span>
-              <span>💻 CSS</span>
+            <div className="card-footer">
+              <span>React, CSS</span>
+              <a href="[your-portfolio-url]" target="_blank" rel="noopener noreferrer" className="project-link">View Project →</a>
             </div>
-            <a href="[your-portfolio-url]" target="_blank" rel="noopener noreferrer" className="project-btn">View Project</a>
           </div>
-          <div className="project-card">
-            <h3 className="project-title">Portfolio Website</h3>
-            <p className="project-description">A responsive personal portfolio built with React and styled with CSS.</p>
-            <div className="project-tech">
-              <span>🔴 React</span>
-              <span>💻 CSS</span>
-            </div>
-            <a href="[your-portfolio-url]" target="_blank" rel="noopener noreferrer" className="project-btn">View Project</a>
-          </div>
-          <div className="project-card">
+          <div className="card">
             <h3 className="project-title">Task Manager App</h3>
             <p className="project-description">A web app for task management using JavaScript and MySQL.</p>
-            <div className="project-tech">
-              <span>🌐 JavaScript</span>
-              <span>📊 MySQL</span>
+            <div className="card-footer">
+              <span>JavaScript, MySQL</span>
+              <a href="[your-task-manager-url]" target="_blank" rel="noopener noreferrer" className="project-link">View Project →</a>
             </div>
-            <a href="[your-task-manager-url]" target="_blank" rel="noopener noreferrer" className="project-btn">View Project</a>
           </div>
-        </div>
-        <div className="projects-button">
-          <a href="[view-all-url]" className="view-all-btn">View All Projects</a>
+          <div className="card">
+            <h3 className="project-title">E-Commerce Platform</h3>
+            <p className="project-description">An online store built with React and integrated with a payment gateway.</p>
+            <div className="card-footer">
+              <span>React, Payment API</span>
+              <a href="[your-ecommerce-url]" target="_blank" rel="noopener noreferrer" className="project-link">View Project →</a>
+            </div>
+          </div>
+          <div className="btn-container">
+            <a href="[view-all-url]" className="btn">View All Projects</a>
+          </div>
         </div>
       </div>
     </section>
