@@ -2,8 +2,6 @@ import { useEffect, useRef } from 'react';
 
 function Hero() {
   const particlesRef = useRef(null);
-  const typedRef = useRef(null);
-  const typedInstance = useRef(null); // To store Typed instance for cleanup
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -34,31 +32,11 @@ function Hero() {
         } catch (error) {
           console.error('Particle.js initialization error:', error);
         }
-      } else {
-        console.log('Particle.js not loaded or ref not ready. Check script in index.html.');
       }
     }, 500);
 
-    if (window.Typed && typedRef.current && !typedInstance.current) {
-      try {
-        typedInstance.current = new window.Typed(typedRef.current, {
-          strings: ['ROBERTO EDEM'], // Uppercase
-          typeSpeed: 50,
-          backSpeed: 0,
-          showCursor: true,
-          cursorChar: '|',
-          startDelay: 500,
-        });
-      } catch (error) {
-        console.error('Typed.js initialization error:', error);
-      }
-    }
-
     return () => {
       clearTimeout(timer);
-      if (typedInstance.current) {
-        typedInstance.current.destroy(); // Cleanup Typed instance
-      }
     };
   }, []);
 
@@ -82,7 +60,9 @@ function Hero() {
         />
         <div style={{ position: 'relative', zIndex: 10, display: 'flex', flexDirection: 'column', alignItems: 'flex-end', width: '100%', padding: '20px' }}>
           <div>
-            <h1 className="hero-title" ref={typedRef} style={{ fontSize: '4rem', fontWeight: 'bold', letterSpacing: '5px', textTransform: 'uppercase' }}></h1>
+            <h1 className="hero-title" style={{ fontSize: '4rem', fontWeight: 'bold', letterSpacing: '5px', textTransform: 'uppercase' }}>
+              ROBERTO EDEM
+            </h1>
             <div style={{ display: 'flex', gap: '10px', marginBottom: '10px' }}>
               <h2 className="hero-subtitle" style={{ fontSize: '1.5rem', margin: 0, textTransform: 'uppercase' }}>SOFTWARE DEVELOPER</h2>
               <h2 className="hero-subtitle" style={{ fontSize: '1.5rem', margin: 0, textTransform: 'uppercase' }}>FRONT-END DEVELOPER</h2>

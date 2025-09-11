@@ -1,5 +1,4 @@
 import React, { useEffect } from "react";
-// import styles from "./Contact.module.css";
 
 const Contact = () => {
   useEffect(() => {
@@ -21,20 +20,26 @@ const Contact = () => {
           <h1>Hey there!</h1>
           <h2>I’m always up for a chat.</h2>
           <p>
-            <a href="mailto:hi@cassie.codes">Pop me an email</a> at
+            <a href="mailto:hi@roberto.dev">Pop me an email</a> at
             hi@roberto.dev <br />
             Or reach me directly via{" "}
-            <a href="mailto:youremail@outlook.com">Outlook</a> <br />
+            <a href="mailto:roberto.edem.dev@outlook.com">Outlook</a> <br />
             Or give me a shout on social media.
           </p>
 
           <div className={"socialIcons"}>
-            <a href="#"><i className="fab fa-twitter"></i></a>
-            <a href="#"><i className="fab fa-linkedin"></i></a>
-            <a href="mailto:youremail@outlook.com">
+            <a href="https://twitter.com/robedem" target="_blank" rel="noopener noreferrer">
+              <i className="fab fa-twitter"></i>
+            </a>
+            <a href="https://linkedin.com/in/robedem" target="_blank" rel="noopener noreferrer">
+              <i className="fab fa-linkedin"></i>
+            </a>
+            <a href="mailto:roberto.edem.dev@outlook.com" target="_blank" rel="noopener noreferrer">
               <i className="fa-brands fa-microsoft"></i>
             </a>
-            <a href="#"><i className="fab fa-github"></i></a>
+            <a href="https://github.com/robedem" target="_blank" rel="noopener noreferrer">
+              <i className="fab fa-github"></i>
+            </a>
           </div>
         </div>
 
