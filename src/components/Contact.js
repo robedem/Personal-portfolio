@@ -45,7 +45,7 @@ const Contact = () => {
 
         <div className={"contactAnimation"}>
           <dotlottie-wc
-            src="https://lottie.host/765d758a-2bef-4164-8ba5-ebea5987774e/szokhWScui.lottie"
+            src="/contact-animation.json" /* Updated to local file */
             style={{ width: "600px", height: "500px" }}
             speed="1"
             autoplay
