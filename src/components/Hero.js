@@ -43,38 +43,23 @@ function Hero() {
   return (
     <section id="home" className="hero">
       <div className="container">
-        <div id="particles-js" ref={particlesRef} style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', zIndex: 1, pointerEvents: 'auto' }}>
-          <canvas style={{ width: '100%', height: '100%' }} />
-        </div>
-        <div
-          className="hero-overlay"
-          style={{
-            position: 'absolute',
-            top: 0,
-            left: 0,
-            width: '100%',
-            height: '100%',
-            backgroundColor: 'rgba(15, 88, 112, 0.6)',
-            zIndex: 2,
-          }}
-        />
-        <div style={{ position: 'relative', zIndex: 10, display: 'flex', flexDirection: 'column', alignItems: 'flex-end', width: '100%', padding: '20px' }}>
+        <div id="particles-js" ref={particlesRef}></div>
+        <div className="hero-overlay"></div>
+        <div className="hero-content">
           <div>
-            <h1 className="hero-title" style={{ fontSize: '4rem', fontWeight: 'bold', letterSpacing: '5px', textTransform: 'uppercase' }}>
-              ROBERTO EDEM
-            </h1>
-            <div style={{ display: 'flex', gap: '10px', marginBottom: '10px' }}>
-              <h2 className="hero-subtitle" style={{ fontSize: '1.5rem', margin: 0, textTransform: 'uppercase' }}>SOFTWARE DEVELOPER</h2>
-              <h2 className="hero-subtitle" style={{ fontSize: '1.5rem', margin: 0, textTransform: 'uppercase' }}>FRONT-END DEVELOPER</h2>
-              <h2 className="hero-subtitle" style={{ fontSize: '1.5rem', margin: 0, textTransform: 'uppercase' }}>IT SUPPORT SPECIALIST</h2>
+            <h1 className="hero-title">ROBERTO EDEM</h1>
+            <div className="hero-subtitles">
+              <h2 className="hero-subtitle">SOFTWARE DEVELOPER</h2>
+              <h2 className="hero-subtitle">FRONT-END DEVELOPER</h2>
+              <h2 className="hero-subtitle">IT SUPPORT SPECIALIST</h2>
             </div>
-            <div className="tech-slider" style={{ overflowX: 'auto', whiteSpace: 'nowrap', padding: '10px 0' }}>
-              <img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" alt="REACT" style={{ width: '50px', marginRight: '20px', verticalAlign: 'middle' }} />
-              <img src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg" alt="PYTHON" style={{ width: '50px', marginRight: '20px', verticalAlign: 'middle' }} />
-              <img src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg" alt="HTML" style={{ width: '50px', marginRight: '20px', verticalAlign: 'middle' }} />
-              <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg" alt="CSS" style={{ width: '50px', marginRight: '20px', verticalAlign: 'middle' }} />
-              <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg" alt="TAILWIND CSS" style={{ width: '50px', marginRight: '20px', verticalAlign: 'middle' }} />
-              <img src="https://upload.wikimedia.org/wikipedia/commons/7/75/Django_logo.svg" alt="DJANGO" style={{ width: '50px', marginRight: '20px', verticalAlign: 'middle' }} />
+            <div className="tech-slider">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" alt="REACT" />
+              <img src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg" alt="PYTHON" />
+              <img src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg" alt="HTML" />
+              <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg" alt="CSS" />
+              <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg" alt="TAILWIND CSS" />
+              <img src="https://upload.wikimedia.org/wikipedia/commons/7/75/Django_logo.svg" alt="DJANGO" />
             </div>
           </div>
         </div>
