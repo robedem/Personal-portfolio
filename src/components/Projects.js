@@ -5,19 +5,19 @@ function Projects() {
         <div className="grid">
           <h2 className="projects-title">Projects</h2>
           <div className="card">
-            <h3 className="project-title">Portfolio Website</h3>
+            <h3 className="project-title">My Portfolio Website</h3>
             <p className="project-description">A responsive personal portfolio built with React and styled with CSS.</p>
             <div className="card-footer">
               <span>React, CSS</span>
-              <a href="[your-portfolio-url]" target="_blank" rel="noopener noreferrer" className="project-link">View Project →</a>
+              <a href="roberto-dev-portfolio.netlify.app" target="_blank" rel="noopener noreferrer" className="project-link">View Project →</a>
             </div>
           </div>
           <div className="card">
-            <h3 className="project-title">Task Manager App</h3>
-            <p className="project-description">A web app for task management using JavaScript and MySQL.</p>
+            <h3 className="project-title">Lifecare</h3>
+            <p className="project-description">A web app dedicated for the care for elderly people. Providing both opportunites for Elders to get professional care and workers to get employed in the sector</p>
             <div className="card-footer">
               <span>JavaScript, MySQL</span>
-              <a href="[your-task-manager-url]" target="_blank" rel="noopener noreferrer" className="project-link">View Project →</a>
+              <a href="https://robedem.github.io/lifecare/" target="_blank" rel="noopener noreferrer" className="project-link">View Project →</a>
             </div>
           </div>
           <div className="card">
@@ -25,7 +25,7 @@ function Projects() {
             <p className="project-description">An online store built with React and integrated with a payment gateway.</p>
             <div className="card-footer">
               <span>React, Payment API</span>
-              <a href="[your-ecommerce-url]" target="_blank" rel="noopener noreferrer" className="project-link">View Project →</a>
+              <a href="https://robedem.github.io/timbu-cloud-shop/" target="_blank" rel="noopener noreferrer" className="project-link">View Project →</a>
             </div>
           </div>
           <div className="btn-container">
