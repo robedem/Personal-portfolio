@@ -29,7 +29,7 @@ function Projects() {
             </div>
           </div>
           <div className="btn-container">
-            <a href="[view-all-url]" className="btn">View All Projects</a>
+            <a href="https://github.com/robedem" className="btn">View All Projects</a>
           </div>
         </div>
       </div>
