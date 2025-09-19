@@ -31,7 +31,7 @@ const Contact = () => {
             </p>
 
             <div className={"socialIcons"}>
-              <a href="https://twitter.com/robedem" target="_blank" rel="noopener noreferrer">
+              <a href="https://twitter.com/Dev__Roberto" target="_blank" rel="noopener noreferrer">
                 <i className="fab fa-twitter"></i>
               </a>
               <a href="https://linkedin.com/in/robedem" target="_blank" rel="noopener noreferrer">
